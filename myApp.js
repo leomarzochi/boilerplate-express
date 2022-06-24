@@ -4,7 +4,7 @@ let app = express();
 console.log("Hello World");
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send(__dirname + "views/index.html");
 });
 
 module.exports = app;
